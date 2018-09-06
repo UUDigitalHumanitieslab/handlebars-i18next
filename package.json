@@ -1,0 +1,41 @@
+{
+  "name": "handlebars-i18next",
+  "version": "0.0.0",
+  "description": "Handlebars helper that lets you translate with i18next inside your templates",
+  "keywords": [
+    "handlebars",
+    "i18n",
+    "i18next",
+    "helper"
+  ],
+  "bugs": "https://github.com/UUDigitalHumanitieslab/handlebars-i18next/issues",
+  "repository": "github:UUDigitalHumanitieslab/handlebars-i18next",
+  "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
+  "license": "BSD-3-Clause",
+  "main": "handlebars-i18next.js",
+  "files": [
+    "*.js*"
+  ],
+  "scripts": {
+    "prepare": "babel handlebars-i18next.es6 -so handlebars-i18next.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
+  },
+  "peerDependencies": {
+    "handlebars": "4",
+    "i18next": "11"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-es2015-modules-umd"
+    ]
+  }
+}
