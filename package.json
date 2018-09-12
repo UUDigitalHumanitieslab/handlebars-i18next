@@ -1,6 +1,6 @@
 {
   "name": "handlebars-i18next",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Handlebars helper that lets you translate with i18next inside your templates",
   "keywords": [
     "handlebars",
