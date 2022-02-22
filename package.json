@@ -28,7 +28,7 @@
   },
   "peerDependencies": {
     "handlebars": "4",
-    "i18next": "11"
+    "i18next": ">=11"
   },
   "babel": {
     "presets": [
