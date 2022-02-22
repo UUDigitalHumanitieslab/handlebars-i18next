@@ -17,7 +17,7 @@
     "*.js*"
   ],
   "scripts": {
-    "prepare": "babel --no-babelrc --presets @babel/preset-env --plugins @babel/plugin-transform-modules-umd handlebars-i18next.es6 -so handlebars-i18next.js"
+    "prepare": "babel --no-babelrc --presets @babel/preset-env --plugins @babel/plugin-transform-modules-umd handlebars-i18next.es6 -s true -o handlebars-i18next.js"
   },
   "dependencies": {},
   "devDependencies": {
