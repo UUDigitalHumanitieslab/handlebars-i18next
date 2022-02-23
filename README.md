@@ -1,6 +1,6 @@
 # handlebars-i18next
 
-![npm](https://img.shields.io/npm/dt/handlebars-i18next) [![npm version](https://badge.fury.io/js/handlebars-i18next.svg)](https://badge.fury.io/js/handlebars-i18next)
+[![npm](https://img.shields.io/npm/dt/handlebars-i18next)](https://badge.fury.io/js/handlebars-i18next) [![npm version](https://badge.fury.io/js/handlebars-i18next.svg)](https://badge.fury.io/js/handlebars-i18next)
 
 [Handlebars][1] helper that lets you translate with [i18next][2] inside your templates.
 
