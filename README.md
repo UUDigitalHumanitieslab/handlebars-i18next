@@ -4,8 +4,11 @@
 
 [Handlebars][handlebars] helper that lets you translate with [i18next][i18next] inside your templates.
 
+*New!* Need to automatically collect the `{{i18n}}` tags from your Handlebars templates for your translation JSON? Look no further than our sister package [handlebars-i18next-parser][parser].
+
 [handlebars]: https://handlebarsjs.com
 [i18next]: https://www.i18next.com
+[parser]: https://www.npmjs.com/package/handlebars-i18next-parser
 
 
 ## Quickstart
