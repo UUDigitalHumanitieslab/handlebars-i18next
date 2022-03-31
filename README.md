@@ -2,10 +2,10 @@
 
 [![npm](https://img.shields.io/npm/dt/handlebars-i18next)](https://badge.fury.io/js/handlebars-i18next) [![npm version](https://badge.fury.io/js/handlebars-i18next.svg)](https://badge.fury.io/js/handlebars-i18next)
 
-[Handlebars][1] helper that lets you translate with [i18next][2] inside your templates.
+[Handlebars][handlebars] helper that lets you translate with [i18next][i18next] inside your templates.
 
-[1]: https://handlebarsjs.com
-[2]: https://www.i18next.com
+[handlebars]: https://handlebarsjs.com
+[i18next]: https://www.i18next.com
 
 
 ## Quickstart
@@ -124,9 +124,9 @@ Keyword arguments take precedence over `root.i18next.replace`, which in turn tak
 
 ### Passing other options to `i18next.t`
 
-See [the i18next documentation][3] for available options.
+See [the i18next documentation][i18n-doc] for available options.
 
-[3]: https://www.i18next.com/translation-function/essentials#overview-options
+[i18n-doc]: https://www.i18next.com/translation-function/essentials#overview-options
 
 In order to provide default options for **all** occurrences of the helper in your template, pass the options hash as the `i18next` property of the root context to the template call.
 
