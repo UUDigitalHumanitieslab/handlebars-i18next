@@ -149,10 +149,35 @@ In order to override options for a **single** occurrence of the helper, pass the
 
 Some notes:
 
- - The options `lngs`, `fallbackLng`, `ns`, `postProcess` and `interpolation` must be JSON-encoded strings when passed as keyword arguments.
+ - The options `lngs`, `fallbackLng`, `ns`, `postProcess`, `formatParams` and `interpolation` must be JSON-encoded strings when passed as keyword arguments.
  - The `returnObjects` option is forced to be `false`, since Handlebars helpers must return a string. You can pass another value, but it will be ignored.
  - The `replace` option is not supported as keyword argument. Pass the interpolation values individually as keyword arguments instead, as described in the previous section.
 
+### Formatting dates, numbers and currencies
+i18next can be used to format dates, numbers and currencies. This is described [here](https://www.i18next.com/translation-function/formatting). In this chapter the principles for using formatting with handlebars will be explained using dates, but the same principle will also work for numbers and currencies.
+
+A simple date format can be achieved by adding a string to the template file, as well as an entry in your translationfile:
+
+<sub>Template:</sub>
+```hbs {data-filename="test.py"}
+{{i18n 'TranslationKey' dateKey=dateObject}}
+```
+<sub>Translation:</sub>
+```json
+"TranslationKey": "On {{dateKey, datetime}}",
+```
+This will result in "On 12/20/2012" for 'en'.
+
+##### Formatting
+You can futher customise the formatting of the date by providing the `formatParams` in your template file.  
+
+<sub>Template:</sub>
+```hbs
+{{i18n 'TranslationKey' dateKey=DateObject formatParams='{"dateKey":{"weekday":  "long",  "year":  "numeric",  "month":  "long",  "day":  "numeric"}}'}}
+```
+Will result in "On Thursday, December 20, 2012" for 'en'
+
+**Please note that opposed to the documentation of i18next, the formatParams should be a json encoded string!**
 
 ### Changing the name of the helper
 
