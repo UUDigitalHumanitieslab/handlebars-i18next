@@ -1,5 +1,5 @@
 // These are options to i18n.t that may take array or object values.
-const jsonKeys = ['lngs', 'fallbackLng', 'ns', 'postProcess', 'interpolation'];
+const jsonKeys = ['lngs', 'fallbackLng', 'ns', 'postProcess', 'interpolation', 'formatParams'];
 
 // Quick polyfill for Object.assign, because IE11 doesn't have that method.
 function extend(target, ...sources) {
