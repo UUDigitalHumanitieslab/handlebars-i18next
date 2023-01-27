@@ -177,8 +177,6 @@ You can futher customise the formatting of the date by providing the `formatPara
 ```
 Will result in "On Thursday, December 20, 2012" for 'en'
 
-**Please note that opposed to the documentation of i18next, the formatParams should be a json encoded string!**
-
 ### Changing the name of the helper
 
 You can override the helper name by passing the name of your choice as the optional third argument to the exported helper registering function.
